@@ -151,7 +151,6 @@ Domain       : <code>${domain}</code>
 Login Limit   : ${iplim} IP
 ISP          : ${ISP}
 CITY         : ${CITY}
-#Port NTLS    : 80
 Port TLS     : 443
 Port gRPC    : 443
 UUID         : <code>${uuid}</code>
@@ -161,11 +160,8 @@ Network      : WS or gRPC
 Path TLS     : <code>/trojan-ws</code>
 Path gRPC    : <code>/trojan-grpc</code>
 ◇━━━━━━━━━━━━━━━━━◇
-Link NTLS    :
-<code>${trojan3}</code>
-#◇━━━━━━━━━━━━━━━━━◇
-#Link TLS    :
-#<code>${trojan2}</code>
+Link TLS    :
+<code>${trojan2}</code>
 ◇━━━━━━━━━━━━━━━━━◇
 Link GRPC    :
 <code>${trojan1}</code>
@@ -189,7 +185,6 @@ Login Limit   : ${iplim} IP
 Quota Limit  : ${Quota} GB
 ISP          : ${ISP}
 CITY         : ${CITY}
-#Port NTLS    : 80
 Port TLS     : 443
 Port gRPC    : 443
 UUID         : <code>${uuid}</code>
@@ -199,14 +194,15 @@ Network      : WS or gRPC
 Path TLS     : <code>/trojan-ws</code>
 Path gRPC    : <code>/trojan-grpc</code>
 ◇━━━━━━━━━━━━━━━━━◇
-#Link NTLS    :
-#<code>${trojan3}</code>
-#◇━━━━━━━━━━━━━━━━━◇
 Link TLS    :
+```
 <code>${trojan2}</code>
+```
 ◇━━━━━━━━━━━━━━━━━◇
 Link GRPC    :
+```
 <code>${trojan1}</code>
+```
 ◇━━━━━━━━━━━━━━━━━◇
 Format OpenClash :
 http://$domain:89/trojan-$user.txt
