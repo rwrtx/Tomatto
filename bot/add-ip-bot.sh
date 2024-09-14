@@ -23,8 +23,8 @@ checking_sc() {
   fi
 }
 checking_sc
-# Token AngIMAN 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
-TOKEN="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"
+# Token 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
+TOKEN="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"
 today=`date -d "0 days" +"%Y-%m-%d"`
 git clone https://github.com/rwrtx/vvipsc.git /root/ipvps/ &> /dev/null
 clear
