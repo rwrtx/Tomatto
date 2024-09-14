@@ -477,7 +477,7 @@ echo ""
 echo -e  "${BIBlue}╭══════════════════════════════════════════╮${NC}"
 echo -e  "${BIBlue}│              \033[1;37mTERIMA KASIH                ${BIBlue}│${NC}"
 echo -e  "${BIBlue}│         \033[1;37mSUDAH MENGGUNAKAN SCRIPT         ${BIBlue}│${NC}"
-echo -e  "${BIBlue}│                \033[1;37m TOMATTO VPN BAYY              ${BIBlue}│${NC}"
+echo -e  "${BIBlue}│               \033[1;37m TOMATTO VPN BAYY              ${BIBlue}│${NC}"
 echo -e  "${BIBlue}╰══════════════════════════════════════════╯${NC}"
 echo " "
 until [[ $dns2 =~ ^[a-zA-Z0-9_.-]+$ ]]; do
@@ -648,8 +648,8 @@ clear
 function iinfo(){
 domain=$(cat /etc/xray/domain)
 TIMES="10"
-CHATID="6198984094"
-KEY="7339386828:AAGVP8M2ig8jmTw-vTh8ytKDmj4N8Aqtud4"
+CHATID="-1001882980996"
+KEY="6783726550:AAEN_0ZwKeqZC5yZmbiuIBcLF6JXbRpSk_Q"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 ISP=$(cat /etc/xray/isp)
 CITY=$(cat /etc/xray/city)
