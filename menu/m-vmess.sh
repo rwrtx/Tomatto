@@ -316,7 +316,7 @@ Network      : WS or gRPC
 Path         : <code>/vmess</code>
 Path Support : <code>https://bug.com/vmess</code>
 ServiceName  : <code>vmess-grpc</code>
-WildCard     : yourbug.<code>${domain}</code>
+WildCard     : <code>yourbug.${domain}</code>
 ◇━━━━━━━━━━━━━━━━━◇
 Link TLS     :
 <code>${vmesslink1}</code>
@@ -357,7 +357,7 @@ Network      : WS or gRPC
 Path         : <code>/vmess</code>
 Path Support : <code>https://bug.com/vmess</code>
 ServiceName  : <code>vmess-grpc</code>
-WildCard     : yourbug.<code>${domain}</code>
+WildCard     : <code>yourbug.${domain}</code>
 ◇━━━━━━━━━━━━━━━━━◇
 Link TLS     :
 <code>${vmesslink1}</code>
