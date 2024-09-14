@@ -151,21 +151,21 @@ Domain       : <code>${domain}</code>
 Login Limit   : ${iplim} IP
 ISP          : ${ISP}
 CITY         : ${CITY}
-Port NTLS    : 80
+#Port NTLS    : 80
 Port TLS     : 443
 Port gRPC    : 443
 UUID         : <code>${uuid}</code>
 AlterId      : 0
 Security     : auto
-Network      : NTLS, WS or gRPC
+Network      : WS or gRPC
 Path TLS     : <code>/trojan-ws</code>
 Path gRPC    : <code>/trojan-grpc</code>
 ◇━━━━━━━━━━━━━━━━━◇
 Link NTLS    :
 <code>${trojan3}</code>
-◇━━━━━━━━━━━━━━━━━◇
-Link TLS    :
-<code>${trojan2}</code>
+#◇━━━━━━━━━━━━━━━━━◇
+#Link TLS    :
+#<code>${trojan2}</code>
 ◇━━━━━━━━━━━━━━━━━◇
 Link GRPC    :
 <code>${trojan1}</code>
@@ -189,19 +189,19 @@ Login Limit   : ${iplim} IP
 Quota Limit  : ${Quota} GB
 ISP          : ${ISP}
 CITY         : ${CITY}
-Port NTLS    : 80
+#Port NTLS    : 80
 Port TLS     : 443
 Port gRPC    : 443
 UUID         : <code>${uuid}</code>
 AlterId      : 0
 Security     : auto
-Network      : NTLS, WS or gRPC
+Network      : WS or gRPC
 Path TLS     : <code>/trojan-ws</code>
 Path gRPC    : <code>/trojan-grpc</code>
 ◇━━━━━━━━━━━━━━━━━◇
-Link NTLS    :
-<code>${trojan3}</code>
-◇━━━━━━━━━━━━━━━━━◇
+#Link NTLS    :
+#<code>${trojan3}</code>
+#◇━━━━━━━━━━━━━━━━━◇
 Link TLS    :
 <code>${trojan2}</code>
 ◇━━━━━━━━━━━━━━━━━◇
@@ -255,17 +255,17 @@ echo -ne
 else
 echo -e "$COLOR1 ${NC} ${WH}Quota Limit  ${COLOR1}: ${WH}${Quota} GB" | tee -a /etc/trojan/akun/log-create-${user}.log
 fi
-echo -e "$COLOR1 ${NC} ${WH}Port NTLS    ${COLOR1}: ${WH}80" | tee -a /etc/trojan/akun/log-create-${user}.log
+#echo -e "$COLOR1 ${NC} ${WH}Port NTLS    ${COLOR1}: ${WH}80" | tee -a /etc/trojan/akun/log-create-${user}.log
 echo -e "$COLOR1 ${NC} ${WH}Port TLS     ${COLOR1}: ${WH}443" | tee -a /etc/trojan/akun/log-create-${user}.log
 echo -e "$COLOR1 ${NC} ${WH}Port gRPC    ${COLOR1}: ${WH}443" | tee -a /etc/trojan/akun/log-create-${user}.log
 echo -e "$COLOR1 ${NC} ${WH}Key          ${COLOR1}: ${WH}${uuid}" | tee -a /etc/trojan/akun/log-create-${user}.log
-echo -e "$COLOR1 ${NC} ${WH}Path NTLS    ${COLOR1}: ${WH}/trojan-ntls" | tee -a /etc/trojan/akun/log-create-${user}.log
+#echo -e "$COLOR1 ${NC} ${WH}Path NTLS    ${COLOR1}: ${WH}/trojan-ntls" | tee -a /etc/trojan/akun/log-create-${user}.log
 echo -e "$COLOR1 ${NC} ${WH}Path WS      ${COLOR1}: ${WH}/trojan-ws" | tee -a /etc/trojan/akun/log-create-${user}.log
 echo -e "$COLOR1 ${NC} ${WH}Path gRPC    ${COLOR1}: ${WH}/trojan-grpc" | tee -a /etc/trojan/akun/log-create-${user}.log
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/trojan/akun/log-create-${user}.log
-echo -e "$COLOR1 ${NC} ${WH}Link NTLS    ${COLOR1}: " | tee -a /etc/trojan/akun/log-create-${user}.log
-echo -e "$COLOR1 ${NC} ${WH}${trojanlink2}" | tee -a /etc/trojan/akun/log-create-${user}.log
-echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/trojan/akun/log-create-${user}.log
+#echo -e "$COLOR1 ${NC} ${WH}Link NTLS    ${COLOR1}: " | tee -a /etc/trojan/akun/log-create-${user}.log
+#echo -e "$COLOR1 ${NC} ${WH}${trojanlink2}" | tee -a /etc/trojan/akun/log-create-${user}.log
+#echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/trojan/akun/log-create-${user}.log
 echo -e "$COLOR1 ${NC} ${WH}Link TLS     ${COLOR1}: " | tee -a /etc/trojan/akun/log-create-${user}.log
 echo -e "$COLOR1 ${NC} ${WH}${trojanlink}" | tee -a /etc/trojan/akun/log-create-${user}.log
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/trojan/akun/log-create-${user}.log
