@@ -33,7 +33,7 @@ apt update && apt upgrade -y && update-grub && sleep 2 && reboot
 
 ## INSTALL SCRIPT 
 Silahkan Pilih Dan Masukkan perintah dibawah untuk menginstall Autoscript Premium by :
-<h2 align="center">꧁༒༺ 𝐑𝟑𝟐𝐖𝐑𝐓𝐱𝐓𝐔𝐍𝐍𝐄𝐋𝐈𝐍𝐆 ༻༒꧂</h2>
+<h2 align="center">꧁༒༺ TomatoVPN ༻༒꧂</h2>
 
 ## INSTALL SCRIPT IPV4
 Script Repositori 1
