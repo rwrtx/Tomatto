@@ -308,7 +308,7 @@ wget https://raw.githubusercontent.com/rwrtx/Tomatto/main/install/rmbl.sh && chm
 clear
 }
 res2() {
-wget https://raw.githubusercontent.com/RMBL-VPN/v1/main/install/r1.sh && chmod +x cr1.sh && ./per1.sh
+wget https://raw.githubusercontent.com/RMBL-VPN/v1/main/install/perl.sh && chmod +x perl.sh && ./perl.sh
 clear
 }
 res3() {
@@ -337,7 +337,7 @@ clear
 echo -e  "${BIBlue}╭══════════════════════════════════════════╮${NC}"
 echo -e  "${BIBlue}│              \033[1;37mTERIMA KASIH                ${BIBlue}│${NC}"
 echo -e  "${BIBlue}│         \033[1;37mSUDAH MENGGUNAKAN SCRIPT         ${BIBlue}│${NC}"
-echo -e  "${BIBlue}│                \033[1;37m TOMATTO VPN BAYY              ${BIBlue}│${NC}"
+echo -e  "${BIBlue}│                \033[1;37m TOMATTO VPN              ${BIBlue}│${NC}"
 echo -e  "${BIBlue}╰══════════════════════════════════════════╯${NC}"
 echo " "
 until [[ $dnss =~ ^[a-zA-Z0-9_.-]+$ ]]; do 
@@ -376,8 +376,8 @@ echo -e "${BIBlue}╰═══════════════════�
 echo -e " "
 echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
 echo -e "${BIBlue}│  [ 1 ]  \033[1;37mDomain xxxx.r32wrtxtunneling.site          ${NC}"
-echo -e "${BIBlue}│  [ 1 ]  \033[1;37mDomain xxxx.vpscloud.web.id          ${NC}"
-echo -e "${BIBlue}│  [ 1 ]  \033[1;37mDomain xxxx.vpsstore-r32wrt.xyz          ${NC}"
+echo -e "${BIBlue}│  [ 2 ]  \033[1;37mDomain xxxx.vpscloud.web.id          ${NC}"
+echo -e "${BIBlue}│  [ 3 ]  \033[1;37mDomain xxxx.vpsstore-r32wrt.xyz          ${NC}"
 echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
 echo -e "${BIBlue} kata (xxxx) nanti akan diganti dengan nama kalian${NC}"
 until [[ $domain2 =~ ^[1-3]+$ ]]; do 
