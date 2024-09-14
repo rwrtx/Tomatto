@@ -195,14 +195,10 @@ Path TLS     : <code>/trojan-ws</code>
 Path gRPC    : <code>/trojan-grpc</code>
 ◇━━━━━━━━━━━━━━━━━◇
 Link TLS    :
-```
-<code>${trojan2}</code>
-```
+<code>```${trojan2}```</code>
 ◇━━━━━━━━━━━━━━━━━◇
 Link GRPC    :
-```
 <code>${trojan1}</code>
-```
 ◇━━━━━━━━━━━━━━━━━◇
 Format OpenClash :
 http://$domain:89/trojan-$user.txt
