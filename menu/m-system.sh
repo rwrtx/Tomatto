@@ -1045,10 +1045,14 @@ read -n 1 -s -r -p " Succes Change Press Any key to Back Menu"
 menu
 }
 function m-tcp(){
-echo "coming soon"
-read -n 1 -s -r -p " Succes Change Press Any key to Back Menu"
+wget -q https://raw.githubusercontent.com/rwrtx/autoscpremi/main/files/bbr.sh
+chmod +x bbr.sh
+./bbr.sh &> /dev/null
+rm -rf bbr.sh
+read -n 1 -s -r -p "Success Change. Press any key to back to the menu"
 menu
 }
+
 clear
 echo -e " $COLOR1╔══════════════════════════════════════════════════════╗${NC}"
 echo -e " $COLOR1║${NC}${COLBG1}                 ${WH}• SYSTEM MENU •                      ${NC}$COLOR1║ $NC"
