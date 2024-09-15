@@ -312,19 +312,19 @@ echo -e " $COLOR1╭════════════════════
 echo -e " $COLOR1│ ${WH}                • SCRIPT BY TomattoVPN •              ${NC} $COLOR1│$NC"
 echo -e " $COLOR1╰════════════════════════════════════════════════════════╯${NC}"
 echo -e " $COLOR1      ══════════════════════════════════════════════${NC}"
-echo -e " $COLOR1  $NC${WH}    ❤️ DATE & TIME  ${COLOR1}: ${WH}$DATE2 WIB${NC}"
-echo -e " $COLOR1  $NC${WH}    🧡 OS           ${COLOR1}: ${WH}$MODEL2${NC}"
-echo -e " $COLOR1  $NC${WH}    💛 RAM          ${COLOR1}: ${WH}$tram-B / $uram-B ${NC}"
+echo -e " $COLOR1  $NC${WH}    ❖ » DATE & TIME  ${COLOR1}: ${WH}$DATE2 WIB${NC}"
+echo -e " $COLOR1  $NC${WH}    ❖ » OS           ${COLOR1}: ${WH}$MODEL2${NC}"
+echo -e " $COLOR1  $NC${WH}    ❖ » RAM          ${COLOR1}: ${WH}$tram-B / $uram-B ${NC}"
 #echo -e " $COLOR1  $NC${WH}  UPTIME      ${COLOR1}: ${WH}$uphours $upminutes $uptimecek"
 #echo -e " $COLOR1  $NC${WH}  TIME        ${COLOR1}: ${WH}$TIMEZONE${NC}"
-echo -e " $COLOR1  $NC${WH}    💚 ISP          ${COLOR1}: ${WH}$ISP${NC}"
-echo -e " $COLOR1  $NC${WH}    🤍 CPU          ${COLOR1}: ${WH}$cpu_usage${NC}"
-echo -e " $COLOR1  $NC${WH}    💙 CITY         ${COLOR1}: ${WH}$CITY${NC}"
-echo -e " $COLOR1  $NC${WH}    ❤️ IP VPS       ${COLOR1}: ${WH}$MYIP${NC}"
-echo -e " $COLOR1  $NC${WH}    🧡 DOMAIN       ${COLOR1}: ${WH}$(cat /etc/xray/domain)"
-#echo -e " $COLOR1  $NC${WH}    🧡 NS DOMAIN   ${COLOR1}: ${WH}$(cat /etc/xray/dns)"
-echo -e " $COLOR1  $NC${WH}    💚 MASA AKTIF   ${COLOR1}: ${WH}$certificate Hari / $Exp2" 
-echo -e " $COLOR1  $NC${WH}    🤍 STATUS       ${COLOR1}: ${WH}•$sts${NC}$COLOR1"
+echo -e " $COLOR1  $NC${WH}    ❖ » ISP          ${COLOR1}: ${WH}$ISP${NC}"
+echo -e " $COLOR1  $NC${WH}    ❖ » CPU          ${COLOR1}: ${WH}$cpu_usage${NC}"
+echo -e " $COLOR1  $NC${WH}    ❖ » CITY         ${COLOR1}: ${WH}$CITY${NC}"
+echo -e " $COLOR1  $NC${WH}    ❖ » IP VPS       ${COLOR1}: ${WH}$MYIP${NC}"
+echo -e " $COLOR1  $NC${WH}    ❖ » DOMAIN       ${COLOR1}: ${WH}$(cat /etc/xray/domain)"
+#echo -e " $COLOR1  $NC${WH}    ❖ » NS DOMAIN   ${COLOR1}: ${WH}$(cat /etc/xray/dns)"
+echo -e " $COLOR1  $NC${WH}    ❖ » MASA AKTIF   ${COLOR1}: ${WH}$certificate Hari / $Exp2" 
+echo -e " $COLOR1  $NC${WH}    ❖ » STATUS       ${COLOR1}: ${WH}•$sts${NC}$COLOR1"
 echo -e " $COLOR1      ══════════════════════════════════════════════${NC}"
 echo -e " $COLOR1╭════════════════════════════════════════════════════════╮${NC}"
 echo -e " $COLOR1│ ${WH}               • USERNAME : $author • $NC"
@@ -357,7 +357,7 @@ else
 ressee="menu"
 bottt="menu"
 fi
-DATE=$(date +'%Y-%m-%d')
+#DATE=$(date +'%Y-%m-%d')
 datediff() {
 d1=$(date -d "$1" +%s)
 d2=$(date -d "$2" +%s)
