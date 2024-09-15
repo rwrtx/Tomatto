@@ -329,7 +329,7 @@ echo -e " $COLOR1      ═══════════════════
 echo -e " $COLOR1╭════════════════════════════════════════════════════════╮${NC}"
 echo -e " $COLOR1│ ${WH}               • USERNAME : $author • $NC"
 echo -e " $COLOR1╰════════════════════════════════════════════════════════╯${NC}"
-echo -e " ${COLOR1}  XRAY : ${status_xray}${COLOR1}   NGINX : ${status_nginx}${COLOR1}   DROPBEAR : ${status_beruangjatuh}${COLOR1}   UDP : ${status_udp}"
+echo -e " ${COLOR1}XRAY : ${status_xray}${COLOR1}   NGINX : ${status_nginx}${COLOR1}   DROPBEAR : ${status_beruangjatuh}${COLOR1}   UDP : ${status_udp}"
 echo -e ""
 echo -e " $COLOR1╭════════════════╮╭══════╮╭═════════════╮╭═══════════════╮${NC}"
 echo -e " $COLOR1│$NC   ${COLOR1}MENU AKUN${NC}    $COLOR1│$NC${COLOR1}${NC} ${COLOR1}STATUS ${NC} ${COLOR1}TOTAL PREMIUM ${NC} ${COLOR1}BANDWIDTH USED${NC}"
