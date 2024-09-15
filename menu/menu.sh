@@ -357,11 +357,11 @@ else
 ressee="menu"
 bottt="menu"
 fi
-#DATE=$(date +'%Y-%m-%d')
+DATE=$(date +'%Y-%m-%d')
 datediff() {
 d1=$(date -d "$1" +%s)
 d2=$(date -d "$2" +%s)
-echo -e "$COLOR1 $NC Expiry In   : $(( (d1 - d2) / 86400 )) Days"
+#echo -e "$COLOR1 $NC Expiry In   : $(( (d1 - d2) / 86400 )) Days"
 }
 function new(){
 cat> /etc/cron.d/autocpu << END
