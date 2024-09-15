@@ -1044,6 +1044,11 @@ echo "$name" > /etc/profil
 read -n 1 -s -r -p " Succes Change Press Any key to Back Menu"
 menu
 }
+function m-tcp(){
+echo "coming soon"
+read -n 1 -s -r -p " Succes Change Press Any key to Back Menu"
+menu
+}
 clear
 echo -e " $COLOR1╔══════════════════════════════════════════════════════╗${NC}"
 echo -e " $COLOR1║${NC}${COLBG1}                 ${WH}• SYSTEM MENU •                      ${NC}$COLOR1║ $NC"
