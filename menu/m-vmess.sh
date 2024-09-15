@@ -346,7 +346,6 @@ Login Limit  : ${iplim} IP
 Quota Limit  : ${Quota} GB
 ISP          : ${ISP}
 CITY         : ${CITY}
-Expired On   : $exp
 Port TLS     : 443
 Port NTLS    : 80, 8080
 Port GRPC    : 443
@@ -370,6 +369,8 @@ Link GRPC    :
 ◇━━━━━━━━━━━━━━━━━◇
 Format OpenClash :
 http://$domain:89/vmess-$user.txt
+◇━━━━━━━━━━━━━━━━━◇
+Expired Until    :  $exp
 ◇━━━━━━━━━━━━━━━━━◇
 $author
 ◇━━━━━━━━━━━━━━━━━◇
