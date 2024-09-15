@@ -37,7 +37,7 @@ clear
 # Mod By SL
 # ==================================================
 # Link Hosting Kalian
-url="raw.githubusercontent.com/AngIMAN/juall/main/install"
+url="raw.githubusercontent.com/rwrtx/Tomatto/main/install"
 
 # initialisasi var
 export DEBIAN_FRONTEND=noninteractive
