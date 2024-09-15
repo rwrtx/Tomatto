@@ -138,15 +138,15 @@ fi
 Green_font_prefix="\033[32m" && Red_font_prefix="\033[31m" && Green_background_prefix="\033[42;37m" && Red_background_prefix="\033[4$below" && Font_color_suffix="\033[0m"
 ssh_ws=$( systemctl status ws-stunnel | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $ssh_ws == "running" ]]; then
-status_ws="${Green_font_prefix}ON${NC}"
+status_ws="${Green_font_prefix}ON🟢${NC}"
 else
-status_ws="${RED}OFF${NC}"
+status_ws="${RED}OFF🔴${NC}"
 fi
 nginx=$( systemctl status nginx | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $nginx == "running" ]]; then
-status_nginx="${Green_font_prefix}ON${NC}"
+status_nginx="${Green_font_prefix}ON🟢${NC}"
 else
-status_nginx="${Red_font_prefix}OFF${NC}"
+status_nginx="${Red_font_prefix}OFF🔴${NC}"
 systemctl start nginx
 fi
 if [[ -e /usr/bin/kyt ]]; then
@@ -160,40 +160,40 @@ fi
 rm -rf /etc/status
 xray=$(systemctl status xray | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
 if [[ $xray == "running" ]]; then
-status_xray="${Green_font_prefix}ON${NC}"
+status_xray="${Green_font_prefix}ON🟢${NC}"
 else
-status_xray="${Red_font_prefix}OFF${NC}"
+status_xray="${Red_font_prefix}OFF🔴${NC}"
 fi
 
 stat_noobz=$( systemctl status noobzvpns | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $stat_noobz == "running" ]]; then
-    stat_noobz="${Green_font_prefix}ON${NC}"
+    stat_noobz="${Green_font_prefix}ON🟢${NC}"
 else
-    stat_noobz="${Red_font_prefix}OFF${NC}"
+    stat_noobz="${Red_font_prefix}OFF🔴${NC}"
     systemctl start noobzvpns
 fi
 
 # // Dropbear
 dropbear_status=$(/etc/init.d/dropbear status | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
 if [[ $dropbear_status == "running" ]]; then
-   status_beruangjatuh="${Green_font_prefix}ON${NC}"
+   status_beruangjatuh="${Green_font_prefix}ON🟢${NC}"
 else
-   status_beruangjatuh="${Red_font_prefix}OFF${NC}"
+   status_beruangjatuh="${Red_font_prefix}OFF🔴${NC}"
 fi
 
 udp_custom=$( systemctl status udp-custom | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $udp_custom == "running" ]]; then
-    status_udp="${Green_font_prefix}ON${NC}"
+    status_udp="${Green_font_prefix}ON🟢${NC}"
 else
-    status_udp="${Red_font_prefix}OFF${NC}"
+    status_udp="${Red_font_prefix}OFF🔴${NC}"
     systemctl start udp-custom
 fi
 
 stat_trgo=$( systemctl status trojan-go | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $stat_trgo == "running" ]]; then
-    stat_trgo="${Green_font_prefix}ON${NC}"
+    stat_trgo="${Green_font_prefix}ON🟢${NC}"
 else
-    stat_trgo="${Red_font_prefix}OFF${NC}"
+    stat_trgo="${Red_font_prefix}OFF🔴${NC}"
     systemctl start trojan-go
 fi
 
