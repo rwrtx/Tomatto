@@ -28,21 +28,21 @@ exit
 fi
 }
 checking_sc
-#function ins-helium(){
-#clear
-#if [[ -e /usr/bin/helium ]]; then
-#helium
-#else
-#echo -ne
-#if [[ $(cat /etc/os-release | grep -w ID | head -n1 | sed 's/=//g' | sed 's/"//g' | sed 's/ID//g') == "ubuntu" ]]; then
-#echo -e " OS UBUNTU GA BISA INSTALL MENU INI"
-#read -n 1 -s -r -p "  Press any key to Back"
-#menu
-#else
-#wget -q -O /usr/bin/helium "https://cdn.discordapp.com/attachments/1043809011474112566/1054014513428566016/helium.sh" && chmod +x /usr/bin/helium && helium
-#fi
-#fi
-#}
+function ins-helium(){
+clear
+if [[ -e /usr/bin/helium ]]; then
+helium
+else
+echo -ne
+if [[ $(cat /etc/os-release | grep -w ID | head -n1 | sed 's/=//g' | sed 's/"//g' | sed 's/ID//g') == "ubuntu" ]]; then
+echo -e " OS UBUNTU GA BISA INSTALL MENU INI"
+read -n 1 -s -r -p "  Press any key to Back"
+menu
+else
+wget -q -O /usr/bin/helium "https://cdn.discordapp.com/attachments/1043809011474112566/1054014513428566016/helium.sh" && chmod +x /usr/bin/helium && helium
+fi
+fi
+}
 function add-host(){
 fun_bar() {
 CMD[0]="$1"
