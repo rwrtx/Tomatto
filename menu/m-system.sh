@@ -120,7 +120,7 @@ echo -e "$COLOR1╭════════════════════�
 echo -e "$COLOR1│ \033[1;37mPlease select a your Choice to Set Domain$COLOR1│${NC}"
 echo -e "$COLOR1╰══════════════════════════════════════════╯${NC}"
 echo -e "$COLOR1╭══════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│  [ 1 ]  \033[1;37mDomain xxx.tepllovpn.eu.org       ${NC}"
+echo -e "$COLOR1│  [ 1 ]  \033[1;37mDomain xxx.vpscloud.web.id       ${NC}"
 echo -e "$COLOR1╰══════════════════════════════════════════╯${NC}"
 until [[ $domain2 =~ ^[1-2]+$ ]]; do
 read -p "   Please select numbers : " domain2
