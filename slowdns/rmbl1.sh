@@ -1,11 +1,11 @@
 #!/bin/bash
 apt install jq curl -y
-DOMAIN=berurat.cloud
+DOMAIN=r32wrtxtunneling.site
 sub=$(cat /root/subdomainx)
-dns=${sub}.berurat.cloud
-dns2=*.${sub}.berurat.cloud
-CF_ID=kadeknovi148@gmail.com
-CF_KEY=45c11fd84f3ee1ce33070b0b653044e33b051
+dns=${sub}.r32wrtxtunneling.site
+dns2=*.${sub}.r32wrtxtunneling.site
+CF_ID=amandafitrizharifa009@gmail.com
+CF_KEY=3c45413104a3c39f1db9dff20acb3a99d7610
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
 echo "Updating DNS for ${dns}..."
