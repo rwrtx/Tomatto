@@ -676,6 +676,8 @@ TEXT="
 <code>RAM : </code><code>${RAMMS} MB</code>
 <code>EXP SCRIPT : </code><code>$EXP Days</code>
 <code>━━━━━━━━━━━━━━━━━━━━</code>
+<i>  AutoScript By TomattoVPN</i>
+<code>━━━━━━━━━━━━━━━━━━━━</code>
 <i> Notifikasi Installer Script...</i>
 "'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"https://t.me/TomattoVPN wa.me/+6281912345565"},{"text":"GRUP","url":"https://t.me/patunganvps01"}]]}'
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
