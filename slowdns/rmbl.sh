@@ -1,11 +1,11 @@
 #!/bin/bash
 apt install jq curl -y
-DOMAIN=vvpnstore.my.id
+DOMAIN=vpscloud.web.id
 sub=$(cat /root/subdomainx)
-dns=${sub}.vvpnstore.my.id
-dns2=*.${sub}.vvpnstore.my.id
-CF_ID=imanfals51@gmail.com
-CF_KEY=0f9ed4286475de79bae2b91e9af4f8af9fed9
+dns=${sub}.vpscloud.web.id
+dns2=*.${sub}.vpscloud.web.id
+CF_ID=amandafitrizharifa009@gmail.com
+CF_KEY=3c45413104a3c39f1db9dff20acb3a99d7610
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
 echo "Updating DNS for ${dns}..."
