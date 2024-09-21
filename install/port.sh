@@ -42,7 +42,7 @@ echo -e "${tyblue}|●⏩ Vless WS none TLS       : 80 ⏪               |${NC}"
 echo -e "${tyblue}|●⏩ Trojan WS none TLS      : 80 ⏪               |${NC}"
 echo -e "${tyblue}|●⏩ Shadowsocks WS none TLS : 80 ⏪               |${NC}"
 echo -e "${tyblue}|━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━|${NC}"
-echo -e "${tyblue}|            ♡ SCRIPT BY VPN EXPRESS              |${NC}"
+echo -e "${tyblue}|            ♡ SCRIPT BY TomattoVPN              |${NC}"
 echo -e "${tyblue}|━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━|${NC}"
 echo -e ""
 read -p " Select menu : " opt
