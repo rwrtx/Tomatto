@@ -413,6 +413,122 @@ cat > /etc/xray/config.json << END
     }
   }
 }
+{
+  "outbounds": [
+    {
+      "protocol": "dns",
+      "tag": "dns-out"
+    },
+    {
+      "streamSettings": {
+        "sockopt": {
+          "mark": 255
+        }
+      },
+      "settings": {
+        "domainStrategy": "UseIPv4"
+      },
+      "protocol": "freedom",
+      "tag": "direct"
+    },
+    {
+      "protocol": "blackhole",
+      "tag": "blackhole"
+    },
+    {
+      "settings": {
+        "servers": [
+          {
+            "port": 10000,
+            "address": "127.0.0.1"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      },
+      "protocol": "socks",
+      "tag": "out"
+    }
+  ],
+  "log": {
+    "loglevel": "warning"
+  },
+  "dns": {
+    "hosts": {
+      "dns.tiarap": "174.138.21.128",
+      "geosite:category-ads-all": "127.0.0.1"
+    },
+    "servers": [
+      {
+        "address": "https://doh.tiar.app/dns-query",
+        "domains": ["geosite:geolocation-!id"],
+        "expectIPs": ["geoip:!id"]
+      },
+      "174.138.21.128",
+      {
+        "address": "1.1.1.1",
+        "port": 53,
+        "domains": ["geosite:id", "geosite:category-games@id"],
+        "expectIPs": ["geoip:id"],
+        "skipFallback": true
+      },
+      {
+        "address": "localhost",
+        "skipFallback": true
+      }
+    ]
+  },
+  "routing": {
+    "rules": [
+      {
+        "type": "field",
+        "outboundTag": "Reject",
+        "domain": ["geosite:category-ads-all"]
+      },
+      {
+        "type": "field",
+        "outboundTag": "Direct",
+        "domain": [
+          "geosite:private",
+          "geosite:apple-id",
+          "geosite:google-id",
+          "geosite:tld-id",
+          "geosite:category-games@id"
+        ]
+      },
+      {
+        "type": "field",
+        "outboundTag": "Proxy",
+        "domain": ["geosite:geolocation-!id"]
+      },
+      {
+        "type": "field",
+        "outboundTag": "Direct",
+        "domain": ["geosite:id"]
+      },
+      {
+        "type": "field",
+        "outboundTag": "Proxy",
+        "network": "tcp,udp"
+      }
+    ]
+  },
+  "inbounds": [
+    {
+      "port": 10000,
+      "protocol": "dokodemo-door",
+      "settings": {
+        "port": 53,
+        "network": "udp",
+        "address": "174.138.21.128"
+      },
+      "tag": "dns-in",
+      "listen": "127.0.0.1"
+    }
+  ]
+}
 END
 rm -rf /etc/systemd/system/xray.service.d
 rm -rf /etc/systemd/system/xray@.service
