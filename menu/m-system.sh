@@ -870,18 +870,18 @@ sleep 2
 m-webmin
 fi
 }
-#function speed(){
-#cd
-#if [[ -e /etc/speedi ]]; then
-#speedtest
-#else
-#sudo apt-get install curl
-#curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash
-#sudo apt-get install speedtest
-#touch /etc/speedi
-#speedtest
-#fi
-#}
+function speedtest(){
+cd
+if [[ -e /etc/speedtest ]]; then
+speedtest
+else
+sudo apt-get install curl
+curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash
+sudo apt-get install speedtest
+touch /etc/speedtest
+speedtest
+fi
+}
 function gotopp(){
 cd
 if [[ -e /usr/bin/gotop ]]; then
